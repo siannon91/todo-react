@@ -18,7 +18,7 @@ body {
 
 .dock {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   width: 380px;
@@ -37,9 +37,16 @@ body {
 }
 
 .topbar {
-  padding: 16px;
+  padding: 8px 5px;
   box-sizing: border-box;
   border-radius: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.topbar p {
+  font-size: larger;
+  font-weight: bold;
 }
 
 .light .panel, .light .topbar {
@@ -57,6 +64,8 @@ body {
 .switch-row {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 10px;
   gap: 10px;
 }
 
@@ -95,9 +104,11 @@ body {
 
 .panel button, .topbar > button {
   border: none;
-  border-radius: 17px;
+  border-radius: 8px;
   padding: 6px 12px;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .light .panel button,
