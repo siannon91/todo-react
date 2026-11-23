@@ -12,7 +12,7 @@ export function AddTodo() {
     }
 
     return (
-        <div>
+        <div className="add-row">
             <input
                 type="text"
                 value={text}
