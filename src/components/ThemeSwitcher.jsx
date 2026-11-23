@@ -7,7 +7,18 @@ export function ThemeSwitcher() {
     return (
         <div>
             <p>Gjeldende tema: {theme}</p>
-            <button onClick={toggleTheme}>Bytt tema</button>
+            <div className="switch-row">
+                <span>Bytt tema</span>
+                <button 
+                    className="switch"
+                    role="switch"
+                    aria-checked={theme === "dark"}
+                    aria-label="Bytt tema"
+                    onClick={toggleTheme}
+                >
+                    <span className="knob">{theme === "light" ? "☀️" : "🌙"}</span>
+                </button>
+            </div>
         </div>
     );
 }
