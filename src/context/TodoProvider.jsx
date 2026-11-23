@@ -5,7 +5,9 @@ export function TodoProvider({ children }) {
     const [todos, setTodos] = useState([]);
 
     function addTodo(text) {
-        const newTodo = { id: Date.now(), text: text, done: false};
+        const cleanText = text.trim();
+        const capitalized = cleanText.charAt(0).toUpperCase() + cleanText.slice(1);
+        const newTodo = { id: Date.now(), text: capitalized, done: false};
         setTodos([...todos, newTodo]);
     }
 
