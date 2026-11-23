@@ -111,3 +111,15 @@ body {
   background-color: #b3202a;
   color: #f2e6e6;
 }
+
+.light .panel .remove {
+  background-color: transparent;
+  color: #3f7a3f;
+  font-weight: bold;
+}
+
+.dark .panel .remove {
+  background-color: transparent;
+  color: #e0505a;
+  font-weight: bold;
+}

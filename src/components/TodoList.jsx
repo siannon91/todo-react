@@ -14,7 +14,7 @@ export function TodoList() {
                         onChange={() => toggleTodo(todo.id)}
                     />
                     {todo.text}
-                    <button onClick={() => removeTodo(todo.id)}>X</button>
+                    <button className="remove" onClick={() => removeTodo(todo.id)}>X</button>
                     
                 </li>
             ))}
