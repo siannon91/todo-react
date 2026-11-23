@@ -10,18 +10,20 @@ function App() {
 
   return (
     <div className={theme}>
-      <div className="topbar">
-        <ThemeSwitcher />
-        <button onClick={() => setShowPanel(!showPanel)}>
-          {showPanel ? "Skjul liste" : "Vis liste"}
-        </button>
-      </div>
-      {showPanel && (
-        <div className="panel">
-          <AddTodo />
-          <TodoList />
+      <div className="dock">
+        <div className="topbar">
+          <ThemeSwitcher />
+          <button onClick={() => setShowPanel(!showPanel)}>
+            {showPanel ? "Skjul liste" : "Vis liste"}
+          </button>
         </div>
-      )}
+        {showPanel && (
+          <div className="panel">
+            <AddTodo />
+            <TodoList />
+          </div>
+        )}
+      </div>
     </div>
   );
 }
