@@ -123,3 +123,21 @@ body {
   color: #e0505a;
   font-weight: bold;
 }
+
+.panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.panel li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid currentColor;
+}
+
+.panel .remove {
+  margin-left: auto;
+}
