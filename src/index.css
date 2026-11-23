@@ -92,3 +92,22 @@ body {
   left: 32px;
   background-color: #b3202a;
 }
+
+.panel button, .topbar > button {
+  border: none;
+  border-radius: 17px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.light .panel button,
+.light .topbar > button {
+  background-color: #3f7a3f;
+  color: #fff8e1;
+}
+
+.dark .panel button,
+.dark .topbar > button {
+  background-color: #b3202a;
+  color: #f2e6e6;
+}
