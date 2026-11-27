@@ -175,3 +175,11 @@ body {
   color: #f2e6e6;
   border: 2px solid #b3202a;
 }
+
+.light input[type="checkbox"] {
+  accent-color: #3f7a3f;
+}
+
+.dark input[type="checkbox"] {
+  accent-color: #b3202a;
+}
